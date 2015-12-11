@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="br.com.mamom"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/br.com.mamom/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="br.com.mamom">
+         </property>
+      </product>
+   </extension>
+   <extension
+         id="br.com.mamom.fragment"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="br.com.mamom">
+      </product>
+   </extension>
+
+</plugin>
