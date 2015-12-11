@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gcjfsKA-EeW7Dr5MH6cKiA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_3kNXwKA-EeW7Dr5MH6cKiA" featurename="children" parentElementId="toolbar:org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_ObiU0KA_EeW7Dr5MH6cKiA" elementId="br.com.mamom.ccred.ui.directtoolitem.meuitem" label="MeuItem2" contributionURI="bundleclass://br.com.mamom.cCred.ui/br.com.mamom.ccred.ui.MyHandler"/>
+  </fragments>
+</fragment:ModelFragments>
