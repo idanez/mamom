@@ -8,7 +8,7 @@ import org.eclipse.swt.widgets.Shell;
 public class MyHandler {
 	@Execute
 	public void execute(Shell parent) {
-		MessageDialog.openInformation(parent, "", "Hello Eclipse!");
+		MessageDialog.openInformation(parent, "", "Hello Eclipse4!");
 	}
 		
 }
