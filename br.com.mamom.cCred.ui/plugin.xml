@@ -50,5 +50,13 @@
             uri="fragment.e4xmi">
       </fragment>
    </extension>
+   <extension
+         id="id1"
+         point="org.eclipse.e4.workbench.model">
+      <processor
+            beforefragment="true"
+            class="Processor">
+      </processor>
+   </extension>
 
 </plugin>

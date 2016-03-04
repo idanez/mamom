@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ide.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" label="Mamom" width="500" height="400">
-    <children xsi:type="advanced:PerspectiveStack" xmi:id="_6wlLkMgZEeSyMNYR5xypkQ">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_6wlLkMgZEeSyMNYR5xypkQ" elementId="br.com.mamom.perspectiveStack">
       <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ">
         <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ">
-          <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ">
-            <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="br.com.mamom.mainPartStack" contributionURI="bundleclass://br.com.mamom/br.com.mamom.parts.SamplePart" label="Sample Part"/>
-          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="br.com.mamom.mainpartstack"/>
         </children>
       </children>
     </children>
@@ -18,9 +16,20 @@
       </children>
       <children xsi:type="menu:Menu" xmi:id="_znZIwGuMEeWnvpQp99SzNg" elementId="help" label="&amp;Help">
         <children xsi:type="menu:HandledMenuItem" xmi:id="_6wlLj8gZEeSyMNYR5xypkQ" label="About" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
-        <children xsi:type="menu:HandledMenuItem" xmi:id="_eXx4oKBLEeW7Dr5MH6cKiA" elementId="org.eclipse.equinox.p2.ui.sdk.update" iconURI="platform:/plugin/br.com.mamom/icons/wn_updates48_hov.gif" mnemonics="U" command="_a9ZR4KBKEeW7Dr5MH6cKiA"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_eXx4oKBLEeW7Dr5MH6cKiA" elementId="org.eclipse.equinox.p2.ui.sdk.update" iconURI="platform:/plugin/br.com.mamom/icons/Down.gif" mnemonics="U" command="_a9ZR4KBKEeW7Dr5MH6cKiA"/>
         <children xsi:type="menu:HandledMenuItem" xmi:id="_nozbQKBPEeW7Dr5MH6cKiA" elementId="org.eclipse.equinox.p2.ui.sdk.install" iconURI="platform:/plugin/org.eclipse.equinox.p2.ui.sdk/icons/obj/iu_obj.gif" mnemonics="S" command="_I_kaYKBKEeW7Dr5MH6cKiA">
           <persistedState key="Identifier" value="org.eclipse.equinox.p2.ui.sdk/org.eclipse.equinox.p2.ui.sdk.install"/>
+        </children>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_E__moOJaEeWmWPodPLkBjA" elementId="window" label="&amp;Window">
+        <children xsi:type="menu:Menu" xmi:id="_nHlXAOJaEeWmWPodPLkBjA" elementId="perspective" label="Pe&amp;rspective">
+          <children xsi:type="menu:MenuSeparator" xmi:id="_WPKL4OJbEeWmWPodPLkBjA" elementId="perspectiveStart" visible="false"/>
+          <children xsi:type="menu:Menu" xmi:id="_ajfu4OJbEeWmWPodPLkBjA" elementId="openPerspective" label="&amp;Open Perspective">
+            <children xsi:type="menu:DirectMenuItem" xmi:id="_fkh_0OJbEeWmWPodPLkBjA" elementId="perspectivesShortlist"/>
+          </children>
+          <children xsi:type="menu:MenuSeparator" xmi:id="_lJIQ0OJbEeWmWPodPLkBjA" elementId="br.com.mamom.menuseparator.0"/>
+          <children xsi:type="menu:DirectMenuItem" xmi:id="_oOMkUOJbEeWmWPodPLkBjA" elementId="editActionSets"/>
+          <children xsi:type="menu:HandledMenuItem" xmi:id="_uMbdUOJbEeWmWPodPLkBjA" elementId="savePerspective" label="Save Perspective &amp;As..."/>
         </children>
       </children>
     </mainMenu>
@@ -31,8 +40,6 @@
       </children>
     </trimBars>
   </children>
-  <handlers xmi:id="_6wlLfcgZEeSyMNYR5xypkQ" elementId="br.com.mamom.handlers.quitCommand" contributionURI="bundleclass://br.com.mamom/br.com.mamom.handlers.QuitHandler" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
-  <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="br.com.mamom.handlers.openCommand" contributionURI="bundleclass://br.com.mamom/br.com.mamom.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="br.com.mamom.handlers.saveCommand" contributionURI="bundleclass://br.com.mamom/br.com.mamom.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="br.com.mamom.handlers.aboutCommand" contributionURI="bundleclass://br.com.mamom/br.com.mamom.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
   <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
@@ -51,6 +58,47 @@
   <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand" category="_xhjJYKBMEeW7Dr5MH6cKiA"/>
   <commands xmi:id="_I_kaYKBKEeW7Dr5MH6cKiA" elementId="org.eclipse.equinox.p2.ui.sdk.install" commandName="Install New Software..." category="_xhjJYKBMEeW7Dr5MH6cKiA"/>
   <commands xmi:id="_a9ZR4KBKEeW7Dr5MH6cKiA" elementId="org.eclipse.equinox.p2.ui.sdk.update" commandName="Check for updates" category="_xhjJYKBMEeW7Dr5MH6cKiA"/>
+  <commands xmi:id="_We_NEOJaEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.preferences" commandName="Preferences" description="Open the preferences dialog" category="_xhjJYKBMEeW7Dr5MH6cKiA"/>
+  <commands xmi:id="_Ora4MOJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.savePerspective" commandName="Save Perspective As" description="Save the current perspective" category="_xhjJYKBMEeW7Dr5MH6cKiA"/>
+  <commands xmi:id="_bJGg4OJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.resetPerspective" commandName="Reset Perspective" description="Reset the current perspective to its default state"/>
+  <commands xmi:id="_eoyT0OJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.edit.paste" commandName="Paste" description="Paste from the clipboard"/>
+  <commands xmi:id="_jrvQUOJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.restartWorkbench" commandName="Restart" description="Restart the workbench" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_rzT0YOJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.showViewMenu" commandName="Show View Menu" description="Show the view menu" category="_tyGcUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_0OJ5wOJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.saveAll" commandName="Save All" description="Save all current contents" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_3xh54OJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.closeOthers" commandName="Close Others" description="Close all editors except the one that is active" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_8lJZ4OJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.previousEditor" commandName="Previous Editor" description="Switch to the previous editor" category="_tyGcUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_Au9H4OJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.edit.findReplace" commandName="Find and Replace" description="Find and replace text" category="_CoT2MOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_G9qs4OJdEeWmWPodPLkBjA" elementId="org.eclipse.equinox.p2.ui.sdk.installationDetails" commandName="Installation Details" category="_xhjJYKBMEeW7Dr5MH6cKiA"/>
+  <commands xmi:id="_NM52UOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.edit.delete" commandName="Delete" description="Delete the selection" category="_CoT2MOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_SlqDsOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.views.showView" commandName="Show View" description="Shows a particular view">
+    <parameters xmi:id="_XMsgQOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.views.showView.viewId" name="View"/>
+    <parameters xmi:id="_Zf2OoOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.views.showView.secondaryId" name="Secondary Id"/>
+    <parameters xmi:id="_ZyYwIOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.views.showView.makeFast" name="As FastView"/>
+  </commands>
+  <commands xmi:id="_fgwBIOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.navigate.showResourceByPath" commandName="Show Resource in Navigator" description="Show a resource in the Navigator given its path">
+    <parameters xmi:id="_jaKisOJdEeWmWPodPLkBjA" elementId="resourcePath" name="Resource Path" typeId="org.eclipse.ui.ide.resourcePath"/>
+  </commands>
+  <commands xmi:id="_mvjKIOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.edit.findNext" commandName="Find Next" description="Find next item" category="_CoT2MOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_ptrIIOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.import" commandName="Import" description="Import" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_uYX8sOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.closePart" commandName="Close Part" description="Close the active workbench part" category="_tyGcUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_xJOTsOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.navigate.back" commandName="Back" description="Navigate back" category="_hduEIOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_2fLEsOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.part.previousPage" commandName="Previous Page" description="Switch to the previous page" category="_hduEIOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_9L1xAOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.help.quickStartAction" commandName="Welcome" description="Show help for beginning users"/>
+  <commands xmi:id="_G3zgAOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.navigate.nextTab" commandName="Next Tab" description="Switch to the next tab" category="_hduEIOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_OR0agOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.previousPerspective" commandName="Previous Perspective" description="Switch to the previous perspective" category="_tyGcUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_X78WcOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.perspectives.showPerspective" commandName="Show Perspective" description="Show a particular perspective" category="_aJjdgOJeEeWmWPodPLkBjA">
+    <parameters xmi:id="_cLF3cOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.perspectives.showPerspective.perspectiveId" name="Parameter"/>
+    <parameters xmi:id="_cbpb8OJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.perspectives.showPerspective.newWindow" name="In New Window"/>
+  </commands>
+  <commands xmi:id="_ivG-EOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.openEditorDropDown" commandName="Quick Switch Editor" description="Open the editor drop down list" category="_tyGcUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_ogMy8OJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.openWorkspace" commandName="Switch Workspace" description="Open the workspace selection dialog" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_rIlKcOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.closeAll" commandName="Close All" description="Close all editors" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_7klC0OJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.file.exit" commandName="Exit" description="Exit the application" category="_mB4oUOJcEeWmWPodPLkBjA"/>
+  <commands xmi:id="_B3CfYOJfEeWmWPodPLkBjA" elementId="org.eclipse.ui.help.installationDialog" commandName="Installation Information" description="Open the installation dialog" category="__UyagOJdEeWmWPodPLkBjA"/>
+  <commands xmi:id="_G6-TUOJfEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.closePerspective" commandName="Close Perspective" description="Close the current perspective" category="_tyGcUOJcEeWmWPodPLkBjA">
+    <parameters xmi:id="_JSMCUOJfEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.closePerspective.perspectiveId" name="Perspective Id"/>
+  </commands>
+  <commands xmi:id="_O04O0OJfEeWmWPodPLkBjA" elementId="org.eclipse.ui.window.customizePerspective" commandName="Customize Perspective" description="Customize the current perspective" category="_tyGcUOJcEeWmWPodPLkBjA"/>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -59,4 +107,11 @@
   <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
   <categories xmi:id="_xhjJYKBMEeW7Dr5MH6cKiA" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
+  <categories xmi:id="_mB4oUOJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.file" name="File category"/>
+  <categories xmi:id="_tyGcUOJcEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.window" name="Window category"/>
+  <categories xmi:id="_CoT2MOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.edit" name="Edit category"/>
+  <categories xmi:id="_U5u_IOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.views" name="Views category"/>
+  <categories xmi:id="_hduEIOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.navigate" name="Navigate category"/>
+  <categories xmi:id="__UyagOJdEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.help" name="Help category"/>
+  <categories xmi:id="_aJjdgOJeEeWmWPodPLkBjA" elementId="org.eclipse.ui.category.perspectives" name="Perspective category"/>
 </application:Application>

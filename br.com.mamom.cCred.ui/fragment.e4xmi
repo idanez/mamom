@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
-<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_gcjfsKA-EeW7Dr5MH6cKiA">
-  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_3kNXwKA-EeW7Dr5MH6cKiA" parentElementId="toolbar:org.eclipse.ui.main.toolbar"/>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_gcjfsKA-EeW7Dr5MH6cKiA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_3kNXwKA-EeW7Dr5MH6cKiA" featurename="children" parentElementId="toolbar:org.eclipse.ui.main.toolbar">
+    <elements xsi:type="menu:DirectToolItem" xmi:id="_jm7zcMa-EeWKgp9M1FwXqQ" elementId="br.com.mamom.ccred.ui.directtoolitem.myItem" label="myItem" contributionURI="bundleclass://br.com.mamom.cCred.ui/myItemHandler"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_fIlOQMa9EeWKgp9M1FwXqQ" featurename="children" parentElementId="br.com.mamom.mainpartstack">
+    <elements xsi:type="basic:Part" xmi:id="_fIlOQca9EeWKgp9M1FwXqQ" elementId="br.com.mamom.part.test" label="partTest"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_9GcF4OJYEeWmWPodPLkBjA" featurename="children" parentElementId="br.com.mamom.perspectiveStack">
+    <elements xsi:type="advanced:Perspective" xmi:id="_NW41kOJZEeWmWPodPLkBjA" elementId="br.com.mamom.ccred.ui.perspective" accessibilityPhrase="CcredPerspective"/>
+  </fragments>
 </fragment:ModelFragments>
